@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nebula Browser</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="shell" class="shell">
+      <header class="tab-header">
+        <div id="tab-strip" class="tab-strip">
+          <button id="new-tab-btn" class="icon-button primary tab-add-btn" title="新建标签页 (Ctrl+T)">+</button>
+        </div>
+      </header>
+
+      <section class="toolbar">
+        <button id="back-btn" class="icon-button" title="后退">←</button>
+        <button id="forward-btn" class="icon-button" title="前进">→</button>
+        <button id="reload-btn" class="icon-button" title="刷新 (Ctrl+R)">↻</button>
+        <button id="home-btn" class="icon-button" title="主页">⌂</button>
+
+        <div class="address-wrap">
+          <input id="address-input" type="text" autocomplete="off" spellcheck="false" placeholder="输入网址或搜索关键词" />
+        </div>
+
+        <button id="bookmark-btn" class="icon-button star" title="添加/移除书签 (Ctrl+D)">★</button>
+        <button id="settings-btn" class="icon-button" title="设置菜单">☰</button>
+        <button id="devtools-btn" class="icon-button" title="开发者工具 (F12)">⌘</button>
+      </section>
+
+      <section class="bookmark-bar">
+        <div class="bookmark-title">书签</div>
+        <div id="bookmark-list" class="bookmark-list"></div>
+      </section>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

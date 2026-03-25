@@ -1,0 +1,12 @@
+node_modules/
+.npm-cache/
+dist/
+out/
+release/
+*.blockmap
+NebulaBrowser-Setup-*.exe
+bin/
+obj/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
